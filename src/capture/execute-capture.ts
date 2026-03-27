@@ -125,6 +125,12 @@ export async function executeCapture(
       primarySelectorFound: Boolean(primaryMatch)
     });
 
+    if (mode === "element" && !primaryMatch) {
+      throw new Error(
+        `Primary selector not found for ${request.platformKey}:${request.captureKey}`
+      );
+    }
+
     if (mode === "element" && primaryMatch) {
       if (capture.scrollIntoView) {
         await primaryMatch.locator.scrollIntoViewIfNeeded();

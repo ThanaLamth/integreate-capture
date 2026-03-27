@@ -10,9 +10,9 @@ describe("coingecko capture config", () => {
     const capture = selectCaptureDefinition(config, "coin_detail", "price_chart");
 
     expect(capture.captureKey).toBe("price_chart");
-    expect(capture.strategy).toBe("element_or_crop");
+    expect(capture.strategy).toBe("element");
     expect(capture.selectors[0]).toBe("[data-coin-chart-v2-target='tvLiveChartContainer']");
-    expect(capture.fallbackSelectors[0]).toBe("body");
-    expect(capture.cropRules?.anchorSelector).toBe("body");
+    expect(capture.fallbackSelectors).toEqual([]);
+    expect(capture.cropRules).toBeUndefined();
   });
 });

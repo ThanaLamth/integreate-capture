@@ -28,20 +28,11 @@
     {
       "captureKey": "price_chart",
       "pageType": "coin_detail",
-      "strategy": "element_or_crop",
+      "strategy": "element",
       "selectors": [
         "[data-coin-chart-v2-target='tvLiveChartContainer']"
       ],
-      "fallbackSelectors": [
-        "body"
-      ],
-      "cropRules": {
-        "anchorSelector": "body",
-        "x": 80,
-        "y": 280,
-        "width": 1180,
-        "height": 620
-      },
+      "fallbackSelectors": [],
       "scrollIntoView": true,
       "retries": 2
     }

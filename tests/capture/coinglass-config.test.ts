@@ -19,6 +19,12 @@ describe("coinglass platform config", () => {
       config.captures.find((entry) => entry.captureKey === "liquidations_chart")?.selectors
     ).toContain("div.echarts-for-react");
     expect(
+      config.captures.find((entry) => entry.captureKey === "liquidations_chart")?.strategy
+    ).toBe("element");
+    expect(
+      config.captures.find((entry) => entry.captureKey === "etf_chart")?.strategy
+    ).toBe("element");
+    expect(
       config.captures.find((entry) => entry.captureKey === "market_cap_heatmap")?.selectors
     ).toContain("#cg-treemap");
   });
