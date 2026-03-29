@@ -1,0 +1,74 @@
+Current capture workflow
+
+1. Read the article or draft.
+
+2. Classify the evidence type.
+Examples:
+- spot_market
+- derivatives_market
+- options_market
+- macro_rates
+- filing_regulatory
+
+3. Infer the real subject from the claim paragraph.
+Examples:
+- BTC
+- oil
+- gold
+- jobless claims
+- ETF filing
+
+4. Recommend sources in two layers.
+- current capture-ready platforms
+- broader source families to check next
+
+5. Decide the evidence mode.
+- capture required
+- capture optional
+- link-only ok
+
+6. Choose the platform and URL.
+This is based on the article claim and subject, not just the slug.
+
+7. Before capture, open the target page and prepare it.
+- generic popup dismiss
+- site-specific prep where needed
+- custom user agent where needed
+
+8. Validate the page before screenshot.
+- confirm there is a real chart or data block
+- reject generic page-shell captures
+- reject blocked or useless pages
+
+9. Capture the specific chart or data region.
+Prefer real selectors such as:
+- .highcharts-container
+- [data-testid="chart-container"]
+- div.echarts-for-react
+
+10. Generate article output.
+- capture placeholder
+- short site-specific caption
+- descriptive source link
+- Data Notes
+
+11. If current coverage is weak:
+- suggest a better source family
+- scaffold the new source instead of stopping
+
+Current key rules
+
+- no blind body capture
+- no BTC-first fallback when the article subject is oil, gold, jobless claims, options, or another stronger subject
+- filing and document sources can be link-only if a screenshot is low-value
+- site-specific caption styles exist for 13 sites
+
+Summary
+
+The system now works like:
+
+claim -> evidence type -> subject -> best source -> validate page -> capture useful region -> caption and source link
+
+It no longer works like:
+
+slug -> random platform -> screenshot whatever loaded
