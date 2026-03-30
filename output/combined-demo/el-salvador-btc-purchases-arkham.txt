@@ -1,0 +1,3 @@
+*This visual supports the article's claim that El Salvador built its Bitcoin reserve through repeated purchases over time rather than a single one-off buy. Source: [Arkham research, Visualizing El Salvador's BTC purchases](https://info.arkm.com/research/el-salvador-dcas-over-500m-btc).*
+
+Key context: the figure is used as an accumulation timeline, showing purchase activity across El Salvador's sovereign BTC strategy.
