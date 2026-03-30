@@ -2,6 +2,35 @@
 
 Local workflow for turning an article draft into a Markdown article with market-data image placeholders generated from site-aware platform capture rules.
 
+## Compared To `integreate-capture`
+
+This repo version extends `https://github.com/ThanaLamth/integreate-capture` with a larger evidence-routing and validation layer.
+
+Main improvements:
+
+- article-aware platform recommendation instead of only fixed asset-to-platform mapping
+- draft planning with:
+  - `Required Evidence`
+  - `Visual Needs`
+  - `Capture Plan`
+  - `Data Notes`
+- broader evidence types such as:
+  - `macro_rates`
+  - `commodities_fx`
+  - `etf_flow`
+  - `structured_product`
+  - `options_market`
+  - `exchange_positioning`
+- platform health checks and selector-level capture checks
+- page validation before capture, so blocked pages and useless shells are rejected
+- generic popup dismissal plus site-specific prep hooks
+- persistent browser-profile support for challenge-heavy sites
+- source-family suggestions and onboarding scaffolds for new platforms
+- per-site caption profiles for 13 sites
+- capture context extraction with short data notes
+
+In short, the original repo was mostly a capture module. This version is closer to an article-evidence capture engine.
+
 ## What This Repo Does
 
 - Reads a local draft article file
