@@ -1,0 +1,5 @@
+Caption:
+*This chart gives readers a live view of the oil-price move driving the article's inflation and Fed-risk thesis. Source: [TradingView USOIL chart](https://www.tradingview.com/chart/?symbol=TVC%3AUSOIL).*
+
+Context:
+Key context: use this as the first visual in the article's causal chain, showing the oil shock before explaining its inflation and policy implications.
