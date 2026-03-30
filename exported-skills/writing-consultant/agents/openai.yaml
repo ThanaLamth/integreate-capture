@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Consultant"
+  short_description: "Advise writing strategy and structure"
+  default_prompt: "Use $writing-consultant to plan or improve an article using the writing knowledge base."

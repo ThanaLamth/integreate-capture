@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing QC"
+  short_description: "QC articles against SEO guidance"
+  default_prompt: "Use $writing-qc to review an article draft against the writing and SEO knowledge base."
